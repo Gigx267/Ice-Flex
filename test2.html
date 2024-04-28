@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Interview test </title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Word Reversal</title>
+    </head>
+    <body>
+      <h1>Word Reversal</h1>
+      <input type="text" id="word" placeholder="Enter a word" required>
+      <button type="button" id="reverse-button">Reverse Word</button>
+      <p id="result"></p>
+    
+      <script src="script.js"></script>
+    </body>
+    </html>
+    
+</html>
+
+<script>
+const wordInput = document.getElementById("word");
+const reverseButton = document.getElementById("reverse-button");
+const result = document.getElementById("result");
+
+reverseButton.addEventListener("click", function() {
+  const inputWord = wordInput.value.trim();
+
+  // Function to reverse a word
+  function reverseWord(word) {
+    return word.split("").reverse().join("");
+  }
+
+  const reversedWord = reverseWord(inputWord);
+  result.textContent = reversedWord;
+});
+
+
+</script>
+
+
+<p> </p>
+</body>
+</html>
